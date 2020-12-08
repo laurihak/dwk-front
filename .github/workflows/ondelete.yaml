@@ -1,7 +1,8 @@
 name: Delete environment from GKE
 
 on:
-  delete:
+  repository_dispatch:
+    types: [deleted]
 
 env:
   GKE_CLUSTER: dwk-cluster
