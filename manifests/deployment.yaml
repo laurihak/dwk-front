@@ -16,7 +16,3 @@ spec:
       containers:
         - name: project-frontend
           image: PROJECT/IMAGE
-          resources:
-            limits:
-              memory: '128Mi'
-              cpu: '500m'
