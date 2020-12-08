@@ -11,11 +11,11 @@ spec:
         backend:
           serviceName: project-frontend-svc
           servicePort: 2345
-      - path: /api
+      - path: /todos
         backend:
           serviceName: project-backend-svc
           servicePort: 2345
-      - path: /api/todos
+      - path: /image
         backend:
           serviceName: project-backend-svc
           servicePort: 2345
