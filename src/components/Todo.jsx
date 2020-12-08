@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
 
-// const API_URL = "/api";
+const API_URL = "/api";
 
 const styles = {
   img: {
@@ -34,7 +34,7 @@ const Todo = () => {
   const [todo, setTodo] = useState("");
 
   const handleClick = async () => {
-    const response = await axios.post(`/todos`, {
+    const response = await axios.post(`${API_URL}/todos`, {
       content: todo,
       type: "todo",
     })
@@ -43,7 +43,7 @@ const Todo = () => {
   };
 
   const fetchList = async () => {
-    const response = await axios.get(`/todos`)
+    const response = await axios.get(`${API_URL}/todos`)
       .catch((e) => e);
     console.log('testing response: ', response)
     const data = response.data;
@@ -62,7 +62,7 @@ const Todo = () => {
     <div style={styles.container}>
       <img
         style={styles.img}
-        src={`/image`}
+        src={`${API_URL}/image`}
         alt="img not found"
       ></img>
       <div style={styles.inputContainer}>

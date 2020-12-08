@@ -7,15 +7,11 @@ spec:
   rules:
   - http:
       paths:
-      - path: /
+      - path: /*
         backend:
           serviceName: project-frontend-svc
           servicePort: 2345
-      - path: /todos
-        backend:
-          serviceName: project-backend-svc
-          servicePort: 2345
-      - path: /image
+      - path: /api
         backend:
           serviceName: project-backend-svc
           servicePort: 2345
