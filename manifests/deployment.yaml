@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: project-frontend
-          image: PROJECTFRONT/IMAGE
+          image: PROJECT/IMAGE
           resources:
             limits:
               memory: '128Mi'
