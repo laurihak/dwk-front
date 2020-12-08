@@ -6,5 +6,5 @@ resources:
 - manifests/ingress.yaml
 - manifests/service.yaml
 images:
-  - name: project-frontend
-    newName: PROJECT/IMAGE
+  - name: PROJECT/IMAGE
+    newName: project-frontend
