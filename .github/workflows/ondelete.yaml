@@ -3,6 +3,9 @@ name: Delete environment from GKE
 on:
   delete:
 
+env:
+  GKE_CLUSTER: dwk-cluster
+  GKE_ZONE: europe-north1-b
 
 jobs:
    build-publish-deploy:
