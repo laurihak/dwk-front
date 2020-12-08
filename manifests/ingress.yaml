@@ -15,3 +15,7 @@ spec:
         backend:
           serviceName: project-backend-svc
           servicePort: 2345
+      - path: /api/todos
+        backend:
+          serviceName: project-backend-svc
+          servicePort: 2345
