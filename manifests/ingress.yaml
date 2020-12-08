@@ -11,7 +11,7 @@ spec:
         backend:
           serviceName: project-frontend-svc
           servicePort: 2345
-      - path: /api
+      - path: /api/*
         backend:
           serviceName: project-backend-svc
           servicePort: 2346
