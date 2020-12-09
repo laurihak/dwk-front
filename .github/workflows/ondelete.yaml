@@ -20,7 +20,6 @@ jobs:
           with:
             service_account_key: ${{ secrets.GKE_SA_KEY }}
             project_id: ${{ secrets.GKE_PROJECT }}
-            export_default_credentials: true
 
         - run: gcloud --quiet auth configure-docker
 
@@ -28,4 +27,5 @@ jobs:
         
         - name: Delete
           run: |-
-            kubectl delete all --all -n ${{ github.event.ref }}
+            kubectl config set-context --current --namespace=${GITHUB_REF#refs/heads/}
+            kubectl delete all --all
