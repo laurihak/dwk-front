@@ -9,18 +9,18 @@ LIST ABOUT PROS AND CONS OF DIY DB(SQL) AND GOOGLE CLOUD DB(SQL) \
 
 GOOGLE SQL \
 PROS: \
-Maintained by google \
-Easy to scale \
-Always updated \
-Easy to start \
-You will save time \
-Other developers may grasp db faster when its googles \
++Maintained by google \
++Easy to scale \
++Always updated \
++Easy to start \
++You will save time \
++Other developers may grasp db faster when its googles \
 
 CONS:
-Costs are higher if you can make good diy version of database \
-You will not learn so much if you use cloud version \
-In team projects there will be problems if only few are really good at databases \
-Harder to scale \
+-Costs are higher if you can make good diy version of database \
+-You will not learn so much if you use cloud version \
+-In team projects there will be problems if only few are really good at databases \
+-Harder to scale \
 
 EXERCISE 3.07 \
 
