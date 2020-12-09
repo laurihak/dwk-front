@@ -27,5 +27,4 @@ jobs:
         
         - name: Delete
           run: |-
-            kubectl config set-context --current --namespace=${GITHUB_REF#refs/heads/}
-            kubectl delete ns ${GITHUB_REF#refs/heads/}
+            kubectl delete ns ${{ github.event.ref }}
